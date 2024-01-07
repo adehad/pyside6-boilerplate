@@ -2,24 +2,16 @@
     "files": [
         [
             "resources/resources.qrc",
-            "app/_ui"
+            "src/app/_ui"
         ],
         [
-            "app/*.ui",
-            "app/_ui"
-        ],
-        [
-            "app/**/*.ui",
-            "app/_ui"
-        ],
-        [
-            "app/**/**/*.ui",
-            "app/_ui"
+            "src/app/*.ui",
+            "src/app/_ui"
         ]
     ],
     "hooks": [],
-    "pyrcc": "pyside6-rcc",
-    "pyrcc_options": "",
-    "pyuic": "pyside6-uic",
-    "pyuic_options": "--from-imports"
+    "qt_rcc": "pyside6-rcc",
+    "qt_rcc_options": "",
+    "qt_uic": "pyside6-uic",
+    "qt_uic_options": "--from-imports"
 }

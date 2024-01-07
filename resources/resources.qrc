@@ -6,12 +6,12 @@
         <file>translations/en_US.qm</file>
         <file>translations/es_ES.qm</file>
         <file>translations/fr_FR.qm</file>
+        <file>translations/it_IT.qm</file>
         <file>icons/demo.svg</file>
         <file>icons/app.icns</file>
         <file>icons/app.ico</file>
         <file>icons/app.svg</file>
         <file>images/built_with_qt.png</file>
         <file>images/python-logo-dark.png</file>
-        <file>translations/it_IT.qm</file>
     </qresource>
 </RCC>

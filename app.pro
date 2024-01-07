@@ -1,12 +1,12 @@
 SOURCES += \
-    app/__init__.py \
-    app/__main__.py \
-    app/MainWindow.py \
-    app/widgets/AboutWidget.py
+    src/app/__init__.py \
+    src/app/__main__.py \
+    src/app/MainWindow.py \
+    src/app/widgets/AboutWidget.py
 
 FORMS += \
-    app/MainWindow.ui \
-    app/widgets/AboutWidget.ui
+    src/app/MainWindow.ui \
+    src/app/widgets/AboutWidget.ui
 
 RESOURCES += \
     resources/resources.qrc \

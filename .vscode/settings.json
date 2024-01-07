@@ -1,0 +1,17 @@
+{
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "always",
+            "source.organizeImports": "always",
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.wordBasedSuggestions": "off"
+    },
+    "files.associations": {
+        "**/resources/translations/*.ts": "xml",
+        "**/*.spec": "python",
+        "**/pdm.lock": "toml",
+    }
+}
