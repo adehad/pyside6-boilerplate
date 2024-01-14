@@ -80,8 +80,8 @@ def run():
             src=str(ui_file),
             target=f"{dest_path / ui_file.stem}_ui.py",
         )
-    pass
 
 
 if __name__ == "__main__":
-    run()
+    if not any([os.environ.get(e) for e in {"READTHEDOCS"}]):
+        run()

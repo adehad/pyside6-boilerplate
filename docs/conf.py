@@ -1,7 +1,20 @@
 """Sphinx configuration."""
 from __future__ import annotations
 
+import os
+import sys
+from pathlib import Path
+from unittest.mock import MagicMock
+
 import app as app
+
+# -- Import configuration ------------------------------------------------------
+if os.environ.get("READTHEDOCS"):
+    # The compiled UI libraries don't need to be generated for the documentation.
+    # Therefore we just stub them out when running on the readthedocs runners.
+    # Is this necessary? No, but probably a more responsible use of build time.
+    for potential_ui_file in (Path(__file__).parent / "../src/app").rglob("*.ui"):
+        sys.modules[f"app._ui.{potential_ui_file.stem}_ui"] = MagicMock()
 
 # -- General configuration -----------------------------------------------------
 
